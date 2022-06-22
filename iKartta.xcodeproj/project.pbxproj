@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083C17A4BC0AE04C09818BE0 /* libPods-iKartta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE6ED526A794F17A4561ADD /* libPods-iKartta.a */; };
 		6D30BFDA286227D600715CC0 /* iKarttaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30BFD9286227D600715CC0 /* iKarttaApp.swift */; };
 		6D30BFDC286227D600715CC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30BFDB286227D600715CC0 /* ContentView.swift */; };
 		6D30BFDE286227DA00715CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D30BFDD286227DA00715CC0 /* Assets.xcassets */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21C7A507CA7797801CAB3DA1 /* Pods-iKartta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKartta.debug.xcconfig"; path = "Target Support Files/Pods-iKartta/Pods-iKartta.debug.xcconfig"; sourceTree = "<group>"; };
+		4DE6ED526A794F17A4561ADD /* libPods-iKartta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iKartta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D30BFD6286227D600715CC0 /* iKartta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKartta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D30BFD9286227D600715CC0 /* iKarttaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKarttaApp.swift; sourceTree = "<group>"; };
 		6D30BFDB286227D600715CC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		6D30BFF0286227DB00715CC0 /* iKarttaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKarttaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D30BFF4286227DB00715CC0 /* iKarttaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKarttaUITests.swift; sourceTree = "<group>"; };
 		6D30BFF6286227DB00715CC0 /* iKarttaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKarttaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70E39474F622D4715D557411 /* Pods-iKartta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKartta.release.xcconfig"; path = "Target Support Files/Pods-iKartta/Pods-iKartta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083C17A4BC0AE04C09818BE0 /* libPods-iKartta.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 				6D30BFE9286227DA00715CC0 /* iKarttaTests */,
 				6D30BFF3286227DB00715CC0 /* iKarttaUITests */,
 				6D30BFD7286227D600715CC0 /* Products */,
+				E667FA6FBAC7008237A7BA31 /* Pods */,
+				A59AA851BE94E7ECBEE32793 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +134,24 @@
 			path = iKarttaUITests;
 			sourceTree = "<group>";
 		};
+		A59AA851BE94E7ECBEE32793 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6ED526A794F17A4561ADD /* libPods-iKartta.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E667FA6FBAC7008237A7BA31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21C7A507CA7797801CAB3DA1 /* Pods-iKartta.debug.xcconfig */,
+				70E39474F622D4715D557411 /* Pods-iKartta.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D30BFFA286227DB00715CC0 /* Build configuration list for PBXNativeTarget "iKartta" */;
 			buildPhases = (
+				CF7863C7CE5AF34FE74427C9 /* [CP] Check Pods Manifest.lock */,
 				6D30BFD2286227D600715CC0 /* Sources */,
 				6D30BFD3286227D600715CC0 /* Frameworks */,
 				6D30BFD4286227D600715CC0 /* Resources */,
+				931E5B393EACE92EAD637780 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +278,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		931E5B393EACE92EAD637780 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iKartta/Pods-iKartta-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iKartta/Pods-iKartta-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iKartta/Pods-iKartta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7863C7CE5AF34FE74427C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iKartta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D30BFD2286227D600715CC0 /* Sources */ = {
@@ -411,6 +480,7 @@
 		};
 		6D30BFFB286227DB00715CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C7A507CA7797801CAB3DA1 /* Pods-iKartta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +510,7 @@
 		};
 		6D30BFFC286227DB00715CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E39474F622D4715D557411 /* Pods-iKartta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
