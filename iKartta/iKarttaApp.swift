@@ -11,7 +11,7 @@ import SwiftUI
 struct iKarttaApp: App {
     var body: some Scene {
         WindowGroup {
-            SeguesView()
+            ContentView()
         }
     }
 }
