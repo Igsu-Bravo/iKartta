@@ -6,9 +6,20 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 @main
 struct iKarttaApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    
+    init() {
+        
+        // TODO: Get this secret from somewhere
+        GMSServices.provideAPIKey("KEY HERE")
+
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
