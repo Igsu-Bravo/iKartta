@@ -100,16 +100,51 @@ public extension View {
     }
 }
 
+
 // ----------------------------------------------------------
 
-struct SwiftUIView: View {
+struct SeguesView: View {
+    // All the routes that lead from this view to the next one
+    enum Route: Hashable {
+        case pushTest, modalTest, popoverTest
+    }
+    
+    // Triggers segues when its values are changed
+    @State private var route: Route? = nil
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack(spacing: 20) {
+                Button("Push") {
+                    route = .pushTest
+                }
+                Button("Modal") {
+                    route = .modalTest
+                }
+                Button("Popover") {
+                    route = .popoverTest
+                }
+            }
+            .navigationBarTitle("iKartta Segues", displayMode: .inline)
+            
+            // Individual segues with their destinations
+            .segue(.push, tag: .pushTest, selection: $route) {
+                Text("Welcome to push")
+            }
+            .segue(.modal, tag: .modalTest, selection: $route) {
+                Button("Welcome to the modal") {
+                    route = nil
+                }
+            }
+            .segue(.popover(.rect(.bounds), .top), tag: .popoverTest, selection: $route) {
+                Text("Welcome to popover")
+            }
+        }
     }
 }
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView()
+        SeguesView()
     }
 }

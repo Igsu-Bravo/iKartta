@@ -49,6 +49,7 @@
 		6D30BFF4286227DB00715CC0 /* iKarttaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKarttaUITests.swift; sourceTree = "<group>"; };
 		6D30BFF6286227DB00715CC0 /* iKarttaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKarttaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D464A27286379F2003596CA /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		6D464A292865997F003596CA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		70E39474F622D4715D557411 /* Pods-iKartta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKartta.release.xcconfig"; path = "Target Support Files/Pods-iKartta/Pods-iKartta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +82,7 @@
 		6D30BFCD286227D600715CC0 = {
 			isa = PBXGroup;
 			children = (
+				6D464A292865997F003596CA /* README.md */,
 				6D30BFD8286227D600715CC0 /* iKartta */,
 				6D30BFE9286227DA00715CC0 /* iKarttaTests */,
 				6D30BFF3286227DB00715CC0 /* iKarttaUITests */,
