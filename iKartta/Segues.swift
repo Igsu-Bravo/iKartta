@@ -115,13 +115,13 @@ struct SeguesView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                Button("Push") {
+                Button("Open map") {
                     route = .pushTest
                 }
-                Button("Modal") {
+                Button("Modal - purpose not yet decided") {
                     route = .modalTest
                 }
-                Button("Popover") {
+                Button("What is this service?") {
                     route = .popoverTest
                 }
             }
@@ -129,15 +129,15 @@ struct SeguesView: View {
             
             // Individual segues with their destinations
             .segue(.push, tag: .pushTest, selection: $route) {
-                Text("Welcome to push")
+                Text("This is where the map will show")
             }
             .segue(.modal, tag: .modalTest, selection: $route) {
-                Button("Welcome to the modal") {
+                Button("This is how a modal shows information") {
                     route = nil
                 }
             }
             .segue(.popover(.rect(.bounds), .top), tag: .popoverTest, selection: $route) {
-                Text("Welcome to popover")
+                Text("This is the description of the service")
             }
         }
     }
