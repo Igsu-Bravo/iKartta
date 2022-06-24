@@ -97,3 +97,6 @@ iOSInjectionProject/
 .env.local
 .env-vars
 
+# Generated code
+
+iKartta/gmapsCredentials.generated.swift
