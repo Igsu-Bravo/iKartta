@@ -16,6 +16,7 @@
 		6D30BFF5286227DB00715CC0 /* iKarttaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30BFF4286227DB00715CC0 /* iKarttaUITests.swift */; };
 		6D30BFF7286227DB00715CC0 /* iKarttaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30BFF6286227DB00715CC0 /* iKarttaUITestsLaunchTests.swift */; };
 		6D464A28286379F2003596CA /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D464A27286379F2003596CA /* Segues.swift */; };
+		6D464A2B2865A3ED003596CA /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D464A2A2865A3EC003596CA /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6D30BFF6286227DB00715CC0 /* iKarttaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKarttaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D464A27286379F2003596CA /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
 		6D464A292865997F003596CA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6D464A2A2865A3EC003596CA /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		70E39474F622D4715D557411 /* Pods-iKartta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKartta.release.xcconfig"; path = "Target Support Files/Pods-iKartta/Pods-iKartta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				6D30BFDD286227DA00715CC0 /* Assets.xcassets */,
 				6D30BFDF286227DA00715CC0 /* Preview Content */,
 				6D464A27286379F2003596CA /* Segues.swift */,
+				6D464A2A2865A3EC003596CA /* SplashView.swift */,
 			);
 			path = iKartta;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D30BFDC286227D600715CC0 /* ContentView.swift in Sources */,
+				6D464A2B2865A3ED003596CA /* SplashView.swift in Sources */,
 				6D30BFDA286227D600715CC0 /* iKarttaApp.swift in Sources */,
 				6D464A28286379F2003596CA /* Segues.swift in Sources */,
 			);
