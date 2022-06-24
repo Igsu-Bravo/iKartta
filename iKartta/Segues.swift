@@ -125,7 +125,7 @@ struct SeguesView: View {
                     route = .popoverTest
                 }
             }
-            .navigationBarTitle("iKartta Segues", displayMode: .inline)
+            .navigationBarTitle("iKartta", displayMode: .inline)
             
             // Individual segues with their destinations
             .segue(.push, tag: .pushTest, selection: $route) {
