@@ -1,0 +1,5 @@
+public struct GMapsCredentials {
+    let apiKey: String
+}
+
+public let Credentials = GMapsCredentials(apiKey: "{{ argument.apiKey }}")

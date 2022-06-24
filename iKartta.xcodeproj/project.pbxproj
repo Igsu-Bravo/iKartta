@@ -170,6 +170,7 @@
 			buildConfigurationList = 6D30BFFA286227DB00715CC0 /* Build configuration list for PBXNativeTarget "iKartta" */;
 			buildPhases = (
 				CF7863C7CE5AF34FE74427C9 /* [CP] Check Pods Manifest.lock */,
+				6D464A2E2865D059003596CA /* ShellScript */,
 				6D30BFD2286227D600715CC0 /* Sources */,
 				6D30BFD3286227D600715CC0 /* Frameworks */,
 				6D30BFD4286227D600715CC0 /* Resources */,
@@ -290,6 +291,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6D464A2E2865D059003596CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Check if env.local exists\nif [ -f ./env.local]\nthen\nsource ./env.local\nfi\n#no `else` case needed if the CI works as expected\n$PODS_ROOT/Sourcery/bin/sourcery --templates ./iKarttaSwiftSDKTests --sources . --output ./iKarttaSwiftSDKTests --args apiKey=$GMAPS_API_KEY\n";
+		};
 		931E5B393EACE92EAD637780 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
