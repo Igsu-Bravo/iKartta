@@ -130,7 +130,14 @@ struct SeguesView: View {
             
             // Individual segues with their destinations
             .segue(.push, tag: .pushTest, selection: $route) {
-                Text("This is where the map will show")
+                // let scrollViewHeight: CGFloat = 80
+
+                  GeometryReader { geometry in
+                    ZStack(alignment: .top) {
+                      // Map
+                      MapViewControllerBridge()
+                    }
+                  }
             }
             .segue(.modal, tag: .modalTest, selection: $route) {
                 Button("This is how a modal shows information") {
