@@ -9,9 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text(Bundle.main.executableURL!.lastPathComponent)  
-            .padding()
-    }
+        List(1..<6) { index in
+          Text("Item \(index)")
+        }.splashView {
+          ZStack {
+              Color.indigo
+            Text("iKartta")
+              .fontWeight(.bold)
+              .font(.system(size: 24))
+              .foregroundColor(.white)
+          }
+        }
+        // This is shown from the start as of now, might want to hide it later on
+        SeguesView()
+      }
 }
 
 

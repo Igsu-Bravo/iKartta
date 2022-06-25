@@ -13,4 +13,3 @@ $ pod install
 This will install the project dependencies.
 
 Open the `.xcworkspace` to open the project on XCode.
-

@@ -4,17 +4,23 @@ PODS:
   - GoogleMaps/Base (6.2.1)
   - GoogleMaps/Maps (6.2.1):
     - GoogleMaps/Base
+  - Sourcery (1.8.1):
+    - Sourcery/CLI-Only (= 1.8.1)
+  - Sourcery/CLI-Only (1.8.1)
 
 DEPENDENCIES:
   - GoogleMaps (= 6.2.1)
+  - Sourcery
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - GoogleMaps
+    - Sourcery
 
 SPEC CHECKSUMS:
   GoogleMaps: 20d7b12be49a14287f797e88e0e31bc4156aaeb4
+  Sourcery: 4d44d4ea26a682a4a9875ec7c1870a1e7b8e183f
 
-PODFILE CHECKSUM: 181dd919d3e09717dca769b2411c517ddbe84842
+PODFILE CHECKSUM: 06271223593245e7371634a2e1d611df65e1a58a
 
 COCOAPODS: 1.11.3
