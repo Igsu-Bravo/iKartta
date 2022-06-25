@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isSplashScreenActive = true
+    
     var body: some View {
         List(1..<6) { index in
           Text("Item \(index)")
@@ -18,10 +20,15 @@ struct ContentView: View {
               .fontWeight(.bold)
               .font(.system(size: 24))
               .foregroundColor(.white)
+              .onDisappear {
+                  self.isSplashScreenActive = false
+              }
           }
         }
-        // This is shown from the start as of now, might want to hide it later on
-        SeguesView()
+        if (!isSplashScreenActive) {
+            // This is shown from the start as of now, might want to hide it later on
+            SeguesView()
+        }
       }
 }
 
