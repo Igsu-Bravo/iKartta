@@ -13,3 +13,9 @@ $ pod install
 This will install the project dependencies.
 
 Open the `.xcworkspace` to open the project on XCode.
+
+## Debug
+
+Copy the `.env.example` file and fill the required fields.
+
+The build phase runs a bash script and uses Sourcery to generate Swift code that contains the env variables in a usable struct.

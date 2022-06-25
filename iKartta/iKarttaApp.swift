@@ -14,15 +14,11 @@ struct iKarttaApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     
     init() {
-        
-        // TODO: Get this secret from somewhere
-        GMSServices.provideAPIKey("KEY HERE")
-
+        GMSServices.provideAPIKey(credentials.apiKey)
     }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-    }
-}
+    }}
