@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 public enum SegueType {
     case push,
